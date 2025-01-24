@@ -14,6 +14,7 @@ This Repository Contains:
 When you install the extension for the first time then you have to follow the procedure given on the instruction page and login.
 Then When the Login is Complete. The Tokens will be saved to VsCode Secret Storage for use Afterwards.
 Then you can start using the extension. You can fetch Test Cases using the problem's url and the Language you want to write code in.
+![HomePageImage](https://github.com/hackerx20/VsCode_Extension_CPH_LeetCode/blob/fe46ca5c40b6cfc232753d29e8b0fc42c46282c0/assets/Screenshot%202025-01-25%20000717.png)
 
 Basic Features includes:
 * Run All Test Cases
