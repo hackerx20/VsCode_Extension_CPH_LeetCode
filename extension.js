@@ -150,7 +150,7 @@ function activate(context) {
                                     await showPage('description');
                                     break;
                                 case 'runTestCase':
-                                    await runTestCasefunction(questionId, titleSlug, language, filename, message.testCaseValue);
+                                    await runTestCasefunction(questionId, titleSlug, language, filename, message.testCaseValue, csrfToken, lsToken);
                                     currentPanel.webview.postMessage({
                                         type: "TestCaseResult",
                                         code_answer : code_answer,
@@ -289,10 +289,22 @@ async function runTestCasefunction(questionId, titleSlug, langSlug, filename, te
         }
         const actualFilePath = filePath || path.join(workspaceFolder, filename);
         
+        // const code_string = (await fs.readFile(actualFilePath, "utf8"))
+        //     .split("\n")
+        //     .map(line => line.trim())
+        //     .join("\n");
         const code_string = (await fs.readFile(actualFilePath, "utf8"))
             .split("\n")
-            .map(line => line.trim())
-            .join("\n");
+            .map(line => {
+                // Preserve leading whitespace (indentation)
+                const leadingWhitespace = line.match(/^\s*/)[0];
+                // Remove trailing whitespace
+                const trimmedLine = line.trimEnd();
+                return leadingWhitespace + trimmedLine;
+            })
+            .join("\n")
+            // Remove multiple consecutive blank lines, but keep at least one
+            .replace(/\n{3,}/g, '\n\n');
         const url = `${baseURL}problems/${titleSlug}/interpret_solution/`;
         const payload = {
             lang: langSlug,
@@ -300,7 +312,7 @@ async function runTestCasefunction(questionId, titleSlug, langSlug, filename, te
             typed_code: code_string,
             data_input: testcaseString
         };
-        
+        console.log(payload);
         const headers = {
             "Content-Type": "application/json",
             "Referer": `https://leetcode.com/problems/${titleSlug}/`,
@@ -310,10 +322,11 @@ async function runTestCasefunction(questionId, titleSlug, langSlug, filename, te
         };
         
         const response = await axios.post(url, payload, { headers });
+        
         const sub_id = response.data.interpret_id;
         
         console.log(`Interpretation ID: ${sub_id}`);
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        await new Promise(resolve => setTimeout(resolve, 8000));
         
         const url1 = `https://leetcode.com/submissions/detail/${sub_id}/check/`;
         const response1 = await axios.get(url1, { headers });

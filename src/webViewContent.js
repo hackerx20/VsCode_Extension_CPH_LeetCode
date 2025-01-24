@@ -263,7 +263,8 @@ function getDescriptionPageContent(context, filename, testCase) {
                     console.log('Test case cannot be empty.');
                     return;
                 }
-                vscode.postMessage({ command: 'runTestCase',
+                vscode.postMessage({ 
+                    command: 'runTestCase',
                     testCaseValue : testCaseValue
                 });
                 window.addEventListener('message', (event) => {
