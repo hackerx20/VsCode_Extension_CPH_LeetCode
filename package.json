@@ -1,0 +1,47 @@
+{
+  "name": "vscode-cph-leetcode",
+  "displayName": "VSCode-CPH-LeetCode",
+  "description": "VsCode extension of Competitive Programming Helper for Leetcode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.startExtensionVSCodeLeetCode",
+        "title": "LeetCode : Start Extension"
+      },
+      {
+        "command": "extension.showHomePage",
+        "title": "Show Home Page"
+      },
+      {
+        "command": "extension.showDescriptionPage",
+        "title": "Show Description Page"
+      },
+      {
+        "command": "extension.showInstructionPage",
+        "title": "Show Instruction Page"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
