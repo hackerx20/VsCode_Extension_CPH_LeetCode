@@ -1,65 +1,50 @@
-# vscode-cph-leetcode README
+# VsCode-CPH-LeetCode
+### Overview
+The CPH (Competitive Programming Helper) VS Code extension is a tool designed to enhance the experience of competitive programmers by streamlining their workflow within the Visual Studio Code environment. It integrates features to simplify coding, testing, and debugging during competitive programming contests. From the beginning the problem with CPH is that, it is unable to parse LeetCode problems to VsCode. This Extension is specifically designed to parse Leetcode Problems keep in mind the features of leetcode, like giving Expected-Outputs even for self-made Test Cases, etc.
+### File information
+This VsCode Extension is made using Javascript and with the use of (Leetcode Graphql API)[https://leetcode.com/graphql]
 
-This is the README for your extension "vscode-cph-leetcode". After writing up a brief description, we recommend including the following sections.
+This Repository Contains:
+* Extension.js file (Main file for the extension, includes all the functionality related to the extension)
+* WebViewContent.js file (This File Mainly involve all the webview content of the Extension)
+* getStyles.js file (This File contains the style related to WebViewContent.js pages)
+  
 
-## Features
+### Features
+When you install the extension for the first time then you have to follow the procedure given on the instruction page and login.
+Then When the Login is Complete. The Tokens will be saved to VsCode Secret Storage for use Afterwards.
+Then you can start using the extension. You can fetch Test Cases using the problem's url and the Language you want to write code in.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Basic Features includes:
+* Run All Test Cases
+* Run Single Test Case
+* Delete Test Case
+* Add Test Case
+* Save Test Case
+* Important of all 'Expected Output for self Made Test Cases'
 
-For example if there is an image subfolder under your extension project workspace:
+### Command:
+LeetCode: Start Extension
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Languages:
+This Extension works for 4 languages : cpp , python, java, javascript
 
 ## Requirements
+Make sure to install node.js, axios using the command below.
+```bash
+npm i axios
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Use Shortcuts
 
-## Extension Settings
+* `ctrl+shift+p `: to open menu of commands
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Contributing
+Contributions are welcome! Follow these steps to contribute:
+* Fork the repository.
+* Create a new branch for your feature or bug fix.
+* Submit a pull request with a detailed description of your changes.
 
-For example:
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
