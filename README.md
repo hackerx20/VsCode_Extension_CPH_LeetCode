@@ -40,7 +40,7 @@ Make sure to install node.js,then install axios using the command below.
 npm i axios
 ```
 
-## Use Shortcuts
+### Use Shortcuts
 
 * `ctrl+shift+p `: to open menu of commands
 
@@ -50,7 +50,9 @@ Contributions are welcome! Follow these steps to contribute:
 * Create a new branch for your feature or bug fix.
 * Submit a pull request with a detailed description of your changes.
 
-
+### Future Enhancements
+* Developing a Chrome Extension: Similar to Competitive Companion, this extension will parse data (including the problem URL, CSRF token, and LS token) and send it to the VSCode extension each time the extension is activated. This approach ensures no personal data is saved while maintaining ease of use.
+* Adding Test Case Submission Features: Enhance functionality by enabling the ability to submit test cases directly from the VSCode extension.
 
 
 
