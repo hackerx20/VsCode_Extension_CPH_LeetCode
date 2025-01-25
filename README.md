@@ -14,9 +14,10 @@ This Repository Contains:
 When you install the extension for the first time then you have to follow the procedure given on the instruction page and login.
 Then When the Login is Complete. The Tokens will be saved to VsCode Secret Storage for use Afterwards.
 Then you can start using the extension. You can fetch Test Cases using the problem's url and the Language you want to write code in.
+![Instruction Page](https://github.com/hackerx20/VsCode_Extension_CPH_LeetCode/blob/9518d4d8a8e837490348267f73461020ee249e2b/assets/%5BExtension%20Development%20Host%5D%20Instruction%20Page%20-%20c%2B%2B%20-%20Visual%20Studio%20Code%202025-01-25%2000-00-17%20(online-video-cutter.com).gif)
 ![HomePageImage](https://github.com/hackerx20/VsCode_Extension_CPH_LeetCode/blob/9518d4d8a8e837490348267f73461020ee249e2b/assets/Screenshot%202025-01-25%20000717.png)
-![](https://github.com/hackerx20/VsCode_Extension_CPH_LeetCode/blob/9518d4d8a8e837490348267f73461020ee249e2b/assets/%5BExtension%20Development%20Host%5D%20Description%20Page%20-%20c%2B%2B%20-%20Visual%20Studio%20Code%202025-01-25%2000-08-29%20(online-video-cutter.com).gif)
-![](https://github.com/hackerx20/VsCode_Extension_CPH_LeetCode/blob/9518d4d8a8e837490348267f73461020ee249e2b/assets/%5BExtension%20Development%20Host%5D%20Instruction%20Page%20-%20c%2B%2B%20-%20Visual%20Studio%20Code%202025-01-25%2000-00-17%20(online-video-cutter.com).gif)
+![DescriptionPage](https://github.com/hackerx20/VsCode_Extension_CPH_LeetCode/blob/9518d4d8a8e837490348267f73461020ee249e2b/assets/%5BExtension%20Development%20Host%5D%20Description%20Page%20-%20c%2B%2B%20-%20Visual%20Studio%20Code%202025-01-25%2000-08-29%20(online-video-cutter.com).gif)
+
 
 
 Basic Features includes:
