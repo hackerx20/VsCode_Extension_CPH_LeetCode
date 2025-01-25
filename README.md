@@ -35,7 +35,7 @@ LeetCode: Start Extension
 This Extension works for 4 languages : cpp , python, java, javascript
 
 ## Requirements
-Make sure to install node.js, axios using the command below.
+Make sure to install node.js,then install axios using the command below.
 ```bash
 npm i axios
 ```
@@ -49,6 +49,7 @@ Contributions are welcome! Follow these steps to contribute:
 * Fork the repository.
 * Create a new branch for your feature or bug fix.
 * Submit a pull request with a detailed description of your changes.
+
 
 
 
